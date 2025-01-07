@@ -33,9 +33,5 @@ class MainCircle:
         plt.axis('equal')
         plt.show()
 
-if __name__ == "__main__":
-    circle = MainCircle(radius=3, num_points=100)  # Создаём окружность с радиусом 3
-    points = circle.get_coordinates()
-    print("Coordinates of points:")
-    print(points)
-    circle.plot_circle()  # Строим график окружности
+
+
