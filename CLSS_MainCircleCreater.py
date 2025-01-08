@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-class MainCircle:
+class MainCircleCreater:
     def __init__(self, radius=3, num_points=100):
         self.radius = radius
         self.num_points = num_points
