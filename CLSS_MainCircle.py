@@ -15,7 +15,7 @@ class MainCircle:
         return np.array([(-xi, -yi) for xi, yi in zip(x, y)])
 
     def get_coordinates(self):
-     #Возвращает массив с координатами точек.
+        #Возвращает массив с координатами точек.
         return self.coordinates
 
     def plot_circle(self):
