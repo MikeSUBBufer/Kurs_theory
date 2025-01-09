@@ -5,7 +5,7 @@ class CirclePoints:
     def __init__(self, num_points, lifetime):
         self.num_points = num_points
         self.radius = 3  # Радиус окружности
-        self.lifetime = lifetime
+        self.lifetime = (0 , lifetime)
         self.x_points = None  # Массив координат x
         self.y_points = None  # Массив координат y
 

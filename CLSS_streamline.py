@@ -2,7 +2,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 class StrLine:
-    def __init__(self, time: int):
+    def __init__(self, time):
         self.time = time
         self.x, self.y = np.meshgrid(np.linspace(-100, 100, 1000), np.linspace(-100, 100, 1000))
         self.v_x = self.x * (-math.exp(self.time))  # уравнения задающие поле скоростей в момент времени t

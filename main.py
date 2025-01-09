@@ -1,13 +1,13 @@
 import math
 import numpy as np
 import matplotlib.pyplot as plt
+from CLSS_MainCircleCreater import CirclePoints
 from CLSS_streamline import StrLine
-from CLSS_MainCircleCreater import MainCircleCreater
-a=int(input('Hello please enter selected time: '))
-Grafik = StrLine(a)
+from CLSS_RungeKutta import RungeKutta
+lifetime=float(input('Hello please enter selected lifetime of the body: '))
+num_points=int(input('Please enter number(int) of points for body: '))
+h=float(input('Please enter the step for Runge-Kutta: '))
+Grafik = StrLine(lifetime)
 Grafik.graf()
-circle = MainCircleCreater(radius=3, num_points=100)  # Создаём окружность с радиусом 3
-points = circle.get_coordinates()
-print("Coordinates of points:")
-print(points)
-circle.plot_circle()  # Строим график окружности
+Runge=RungeKutta(num_points,lifetime,h)
+print(Runge.result_x)
