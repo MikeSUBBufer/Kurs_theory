@@ -1,11 +1,11 @@
 import numpy as np
-import matplotlib.pyplot as plt
-
-class CirclePoints:
+from CLSS_MatCircle import MatCircle
+class CirclePoints(MatCircle):
     def __init__(self, num_points, lifetime):
+        super().__init__(lifetime)
         self.num_points = num_points
-        self.radius = 3  # Радиус окружности
-        self.lifetime = (0 , lifetime)
+        #self.radius = 3  # Радиус окружности
+        #self.lifetime = (0 , lifetime)
         self.x_points = None  # Массив координат x
         self.y_points = None  # Массив координат y
 
