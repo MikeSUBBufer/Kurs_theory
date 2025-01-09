@@ -1,7 +1,3 @@
-import math
-import numpy as np
-import matplotlib.pyplot as plt
-from CLSS_MainCircleCreater import CirclePoints
 from CLSS_streamline import StrLine
 from CLSS_RungeKutta import RungeKutta
 lifetime=float(input('Hello please enter selected lifetime of the body: '))
