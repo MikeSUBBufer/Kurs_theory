@@ -8,13 +8,16 @@ class CirclePoints(MatCircle):
         #self.lifetime = (0 , lifetime)
         self.x_points = None  # Массив координат x
         self.y_points = None  # Массив координат y
-
     def generate_points(self):
         # Углы точек для полной окружности
         angles = np.linspace(0, 2 * np.pi, self.num_points)
         # Вычисляем координаты x и y с центром в (4, -4)
         self.x_points = self.radius * np.cos(angles) + self.cent_point_cord[0]
-        self.y_points = self.radius * np.sin(angles) - self.cent_point_cord[1]
-
-
+        #print(self.cent_point_cord[1])
+        self.y_points = self.radius * np.sin(angles) + self.cent_point_cord[1]
+if __name__ == "__main__":
+    c=CirclePoints(6,2)
+    c.generate_points()
+    print(c.x_points)
+    print(c.y_points)
 

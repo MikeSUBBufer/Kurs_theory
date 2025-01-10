@@ -21,7 +21,7 @@ class RungeKutta(CirclePoints):
 
     def f(self, t, x, y):
         dx_dt = -np.exp(t) * x
-        dy_dt = -np.exp(t) * y
+        dy_dt = np.exp(t) * y
         return dx_dt, dy_dt
 
     def solve(self):
@@ -70,9 +70,9 @@ class RungeKutta(CirclePoints):
 
 # Тестирование
 if __name__ == "__main__":
-    num_points = 100  # Количество точек (пользователь задаёт)
+    num_points = 6  # Количество точек (пользователь задаёт)
     lifetime = 2
     h = 0.1
     rk = RungeKutta(num_points, lifetime, h)
-    print(rk.result_x)
+    print(rk.result_x[0],'111',rk.result_y[0])
 

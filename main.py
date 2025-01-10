@@ -6,4 +6,4 @@ h=float(input('Please enter the step for Runge-Kutta: '))
 Grafik = StrLine(lifetime)
 Grafik.graf()
 Runge=RungeKutta(num_points,lifetime,h)
-print(Runge.result_x) # проверка что точки для траетории располагаются в массиве в правильном порядке
+print(Runge.result_x[0],'   ', Runge.result_y[0]) # проверка что точки для траетории располагаются в массиве в правильном порядке
