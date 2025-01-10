@@ -13,8 +13,8 @@ class CirclePoints(MatCircle):
         # Углы точек для полной окружности
         angles = np.linspace(0, 2 * np.pi, self.num_points)
         # Вычисляем координаты x и y с центром в (4, -4)
-        self.x_points = self.radius * np.cos(angles) + 4
-        self.y_points = self.radius * np.sin(angles) - 4
+        self.x_points = self.radius * np.cos(angles) + self.cent_point_cord[0]
+        self.y_points = self.radius * np.sin(angles) - self.cent_point_cord[1]
 
 
 

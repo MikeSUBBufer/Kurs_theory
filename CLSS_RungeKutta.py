@@ -75,12 +75,4 @@ if __name__ == "__main__":
     h = 0.1
     rk = RungeKutta(num_points, lifetime, h)
     print(rk.result_x)
-    #rk.generate_points()  # Генерация начальных точек окружности  # Установка временного интервала  # Шаг интегрирования
 
-    #results = rk.solve()  # Решение методом Рунге-Кутты
-
-    # Вывод результатов
-    #for idx, (x_values, y_values) in enumerate(rk.result_points):
-       # print(f"Начальная точка {idx + 1}:")
-        #for t, x, y in zip(np.arange(rk.lifetime[0], rk.lifetime[1] + h, h), x_values, y_values):
-            #print(f"t = {t:.2f}, x = {x:.4f}, y = {y:.4f}")
