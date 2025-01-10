@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from CLSS_RungeKutta import RungeKutta
-class Trajectory:
+class Trajectory(RungeKutta):
     def __init__(self, x_coords, y_coords):
-        super().__init__(num_points, lifetime)
+        super().__init__(num_points, lifetime,h)
         self.x_coords = x_coords
         self.y_coords = y_coords
 
