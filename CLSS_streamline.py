@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 class StrLine:
     def __init__(self, time):
         self.time = time
-        self.x, self.y = np.meshgrid(np.linspace(-5, 5, 1000), np.linspace(-5, 5, 1000))
+        self.x, self.y = np.meshgrid(np.linspace(0, 5, 1000), np.linspace(-5, 0, 1000))
         self.v_x = self.x * (-math.exp(self.time))  # уравнения задающие поле скоростей в момент времени t
         self.v_y = self.y * math.exp(self.time)
     def graf(self):
@@ -17,3 +17,11 @@ class StrLine:
         plt.ylabel("y")
         plt.grid()
         plt.show()
+if __name__ == "__main__":
+    cl=StrLine(100)
+    cl.graf()
+    print(cl.v_y)
+    print('1111111111111111111111111111111111111111111111111111111111111111111111111')
+    print(cl.v_x)
+    print('1111111111111111111111111111111111111111111111111111111111111111111111111')
+    print(cl.y)

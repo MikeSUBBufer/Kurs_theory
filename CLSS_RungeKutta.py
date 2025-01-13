@@ -72,7 +72,7 @@ class RungeKutta(CirclePoints):
 if __name__ == "__main__":
     num_points = 6  # Количество точек (пользователь задаёт)
     lifetime = 2
-    h = 0.1
+    h = 0.5
     rk = RungeKutta(num_points, lifetime, h)
     print(rk.result_x[0],'111',rk.result_y[0])
 
