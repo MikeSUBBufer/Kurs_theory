@@ -1,9 +1,13 @@
 from CLSS_streamline import StrLine
+from CLSS_DeformedCircle import DeformedCircle
+from CLSS_Trajectory import Trajectory
 from CLSS_RungeKutta import RungeKutta
+from CLSS_MatCircleDeformed import NewMatCircle
 lifetime=float(input('Hello please enter selected lifetime of the body: '))
 num_points=int(input('Please enter number(int) of points for body: '))
 h=float(input('Please enter the step for Runge-Kutta: '))
 Grafik = StrLine(lifetime)
 Grafik.graf()
-Runge=RungeKutta(num_points,lifetime,h)
-print(Runge.result_x[0],'   ', Runge.result_y[0]) # проверка что точки для траетории располагаются в массиве в правильном порядке
+DefCir=DeformedCircle(num_points,lifetime,h)
+Trajectory=Trajectory(num_points,lifetime,h)
+
