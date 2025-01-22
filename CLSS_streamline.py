@@ -22,5 +22,5 @@ class StrLine:
         plt.grid()
         plt.show()
 if __name__ == "__main__":
-    cl=StrLine(0.5)
+    cl=StrLine(5)
     cl.graf()

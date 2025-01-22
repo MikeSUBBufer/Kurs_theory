@@ -1,12 +1,11 @@
 import plotly.graph_objs as go
-import numpy as np
 from CLSS_RungeKutta import RungeKutta
 from CLSS_MatCircleDeformed import NewMatCircle
 class DeformedCircle(RungeKutta):
     def __init__(self, num_points, lifetime, h):
         super().__init__(num_points, lifetime, h)
-        self.result_x = np.transpose(self.result_x)
-        self.result_y = np.transpose(self.result_y)
+        self.result_x = self.result_x.T
+        self.result_y = self.result_y.T
         self.new()
     def new(self):
         fig = go.Figure()

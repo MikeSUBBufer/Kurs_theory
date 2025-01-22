@@ -3,7 +3,6 @@ from CLSS_MainCircleCreater import CirclePoints
 class RungeKutta(CirclePoints):
     def __init__(self, num_points, lifetime, h):
         super().__init__(num_points,lifetime)
-        self.result_points = None  # Массив результатов для каждой точки
         self.step = h
         self.result_x = None # для траектории
         self.result_y = None # для траектории
@@ -65,7 +64,6 @@ class RungeKutta(CirclePoints):
             u+=1
         self.result_x = results_x
         self.result_y = results_y
-        self.result_points = results
         return results
 
 # Тестирование
