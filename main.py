@@ -1,8 +1,6 @@
 from CLSS_streamline import StrLine
 from CLSS_DeformedCircle import DeformedCircle
 from CLSS_Trajectory import Trajectory
-from CLSS_RungeKutta import RungeKutta
-from CLSS_MatCircleDeformed import NewMatCircle
 lifetime=float(input('Hello please enter selected lifetime of the body: '))
 num_points=int(input('Please enter number(int) of points for body: '))
 h=float(input('Please enter the step for Runge-Kutta: '))
